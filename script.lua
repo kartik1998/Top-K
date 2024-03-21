@@ -156,11 +156,11 @@ function TopK:add(item, itemlen, increment)
 
     -- Update heap
     if maxCount >= heapMin then
-        -- Implementation of heap update needed
+        -- TODO: @kartik1998
     end
 end
 
--- You need to implement the remaining methods similarly
+-- refer to https://github.com/RedisBloom/RedisBloom/blob/master/src/topk.c for other methods
 
 -- Example usage
 local topk = TopK.create(10, 100, 50, 0.9)
